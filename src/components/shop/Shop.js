@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
+import CartActionButton from './CartActionButton';
 import uniqid from 'uniqid';
 
 function Shop() {
   const products = [
     {
       name: 'Hat',
+      image: 'hat.png',
+      price: '24.99',
+      id: uniqid(),
+    },
+    {
+      name: 'Bat',
       image: 'hat.png',
       price: '24.99',
       id: uniqid(),
@@ -34,8 +41,6 @@ function Shop() {
 
     if (newItem) { updatedCart.push(cartObject); }
 
-    console.log(updatedCart);
-
     setCart(updatedCart);
   }
 
@@ -52,6 +57,7 @@ function Shop() {
           />
         ))}
       </ul>
+      <CartActionButton cart={cart} />
     </div>
   );
 }
