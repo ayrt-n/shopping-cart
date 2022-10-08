@@ -1,0 +1,30 @@
+.Nav {
+  min-height: 3.25rem;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+.Nav-logo {
+  height: 2.5rem;
+  width: auto;
+}
+
+.Nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-link:hover {
+  color: rgb(65, 65, 65);
+}
+
+.Nav-link:active {
+  color: black;
+}
