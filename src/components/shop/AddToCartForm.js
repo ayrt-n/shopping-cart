@@ -7,8 +7,8 @@ function AddToCartForm({ handleSubmit }) {
     setCount(e.target.value)
   };
 
-  const preventMinus = (e) => {
-    if (e.code === 'Minus') {
+  const preventNumKeys = (e) => {
+    if (e.key === '-' || e.key === '.' || e.key === '+' || e.key === 'e') {
       e.preventDefault();
     }
   }
@@ -29,12 +29,13 @@ function AddToCartForm({ handleSubmit }) {
 
   const submitQuantity = (e) => {
     e.preventDefault();
-    const quantity = +e.target.quantity.value;
 
-    if (quantity > 0) {
-      handleSubmit(+e.target.quantity.value);
-      setCount(0);
+    // If count is a number and greater than zero, pass to handleSubmit
+    if (!isNaN(count) && count > 0) {
+      handleSubmit(+count);
     }
+
+    setCount(0);
   }
 
   return (
@@ -44,7 +45,7 @@ function AddToCartForm({ handleSubmit }) {
         <input
           type="number"
           value={count}
-          onKeyPress={preventMinus}
+          onKeyPress={preventNumKeys}
           onChange={changeCount}
           min="0"
           name="quantity"
