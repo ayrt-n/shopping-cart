@@ -1,0 +1,31 @@
+.Home {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  top: 3.25rem;
+  width: 100%;
+}
+
+.Home-showcase-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Showcase-item {
+  width: 33%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.Showcase-item.full-size {
+  width: 66%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .Showcase-item {
+    width: 66%;
+  }
+}
