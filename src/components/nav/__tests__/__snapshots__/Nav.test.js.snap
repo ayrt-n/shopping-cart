@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component renders nav with links 1`] = `
+<div>
+  <nav
+    class="Nav"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Stussy logo"
+        class="Nav-logo"
+        src="logo.svg"
+      />
+    </a>
+    <a
+      class="Nav-link"
+      href="/shop"
+    >
+      Shop
+    </a>
+  </nav>
+</div>
+`;
