@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import CartActionButton from './CartActionButton';
 import '../../styles/Shop.css';
 import uniqid from 'uniqid';
 
 function Shop() {
+  const [cart, setCart] = useState([]);
+  const [quantity, setQuantity] = useState(0);
   const products = [
     {
       name: 'STUSSY BASIC BLACK SWEATER',
@@ -38,8 +40,7 @@ function Shop() {
     },
   ];
 
-  const [cart, setCart] = useState([]);
-
+  // On addToCart take product object and add to cart array or add quantity if item exists
   const addToCart = (cartObject) => {
     let newItem = true;
     const updatedCart = [];
@@ -63,6 +64,13 @@ function Shop() {
     setCart(updatedCart);
   }
 
+  // On cart update, calculate how many items in cart and set quantity equal
+  useEffect(() => {
+    setQuantity(
+      cart.reduce((sum, item) => (sum + item.quantity), 0)
+    );
+  }, [cart]);
+
   return (
     <div className='Shop'>
       <ul className='Shop-grid'>
@@ -76,7 +84,7 @@ function Shop() {
           />
         ))}
       </ul>
-      <CartActionButton cart={cart} />
+      <CartActionButton quantity={quantity} />
     </div>
   );
 }
