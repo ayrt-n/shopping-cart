@@ -1,19 +1,38 @@
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import CartActionButton from './CartActionButton';
+import '../../styles/Shop.css';
 import uniqid from 'uniqid';
 
 function Shop() {
   const products = [
     {
-      name: 'Hat',
-      image: 'hat.png',
+      name: 'STUSSY BASIC BLACK SWEATER',
+      image: 'stussy-black-sweater.webp',
+      price: '220.00',
+      id: uniqid(),
+    },
+    {
+      name: 'STUSSY BASIC BLACK T-SHIRT',
+      image: 'stussy-black-shirt.webp',
       price: '24.99',
       id: uniqid(),
     },
     {
-      name: 'Bat',
-      image: 'hat.png',
+      name: 'STUSSY BLACK LION T-SHIRT',
+      image: 'stussy-lion-shirt.webp',
+      price: '24.99',
+      id: uniqid(),
+    },
+    {
+      name: 'STUSSY BLUE SQUARED T-SHIRT',
+      image: 'stussy-blue-s-shirt.webp',
+      price: '24.99',
+      id: uniqid(),
+    },
+    {
+      name: 'STUSSY BUCKET HAT',
+      image: 'stussy-bucket-hat.webp',
       price: '24.99',
       id: uniqid(),
     },
@@ -45,8 +64,8 @@ function Shop() {
   }
 
   return (
-    <div>
-      <ul>
+    <div className='Shop'>
+      <ul className='Shop-grid'>
         { products.map((product) => (
           <ProductCard
             name = {product.name}

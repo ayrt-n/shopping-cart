@@ -16,11 +16,10 @@ function ProductCard({ name, image, price, handleSubmit }) {
   }
 
   return (
-    <li>
+    <li className='Shop-grid-item'>
       <img src={imageSrc} alt={image} />
-      <p>Timberland</p>
       <h2>{name}</h2>
-      <p>${price}</p>
+      <p className='Shop-price'>${price}</p>
       <AddToCartForm handleSubmit={addToCart} />
     </li>
   );

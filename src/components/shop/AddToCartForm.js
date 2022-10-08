@@ -39,8 +39,8 @@ function AddToCartForm({ handleSubmit }) {
 
   return (
     <form onSubmit={submitQuantity}>
-      <div>
-        <button onClick={decrementCount}>-</button>
+      <div className="Shop-quantity-controls">
+        <button onClick={decrementCount} className="Shop-decrement Shop-quantity-button">-</button>
         <input
           type="number"
           value={count}
@@ -48,10 +48,11 @@ function AddToCartForm({ handleSubmit }) {
           onChange={changeCount}
           min="0"
           name="quantity"
+          className="Shop-quantity-input"
         />
-        <button onClick={incrementCount}>+</button>
+        <button onClick={incrementCount} className="Shop-increment Shop-quantity-button">+</button>
       </div>
-      <button type='submit'>Add to cart</button>
+      <button type='submit' className="Shop-cart-button">Add to cart</button>
     </form>
   );
 }
