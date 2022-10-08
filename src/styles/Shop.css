@@ -20,6 +20,10 @@
   margin-bottom: 50px;
 }
 
+.Shop-grid-item img {
+  width: 100%;
+}
+
 .Shop-grid-item *:not(:last-child) {
   margin-bottom: 0.5rem;
 }
