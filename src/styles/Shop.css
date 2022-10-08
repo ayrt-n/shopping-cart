@@ -34,7 +34,7 @@
 
 /* Cart Action Button Styles */
 .Shop-cart-action-button {
-  background-color: #8b5cf6;
+  background-color: rgb(28, 28, 28);
   box-sizing: border-box;
   padding: 1.25rem;
   width: 75px;
@@ -53,13 +53,29 @@
   min-width: 1.5ch;
   width: auto;
   height: 1.5ch;
-  border: 5px #8b5cf6 solid;
+  border: 5px rgb(28, 28, 28) solid;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   top: -7px;
   right: -7px;
+}
+
+.Shop-cart-action-button:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.Shop-cart-count:hover {
+  border-color: rgb(20, 20, 20);
+}
+
+.Shop-cart-action-button:active {
+  background-color: rgb(28, 28, 28);
+}
+
+.Shop-cart-count:hover {
+  border-color: rgb(28, 28, 28);
 }
 
 /* Shop Add To Cart Form Styles */
