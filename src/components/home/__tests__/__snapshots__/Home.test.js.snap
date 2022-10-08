@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component render homepage with images 1`] = `
+<div>
+  <div
+    class="Home"
+  >
+    <div
+      class="Home-showcase-container"
+    >
+      <img
+        alt="Man wearing black stussy shirt"
+        class="Showcase-item"
+        src="stussy-home-1.webp"
+      />
+      <img
+        alt="Man wearing black stussy hoodie"
+        class="Showcase-item"
+        src="stussy-home-2.webp"
+      />
+    </div>
+    <div
+      class="Home-showcase-container"
+    >
+      <img
+        alt="Stussy denim jacket"
+        class="Showcase-item"
+        src="stussy-home-3.webp"
+      />
+      <img
+        alt="Man wearing white stussy shirt and brown pants"
+        class="Showcase-item"
+        src="stussy-home-4.webp"
+      />
+    </div>
+    <div
+      class="Home-showcase-container"
+    >
+      <img
+        alt="Miniature eight ball sitting on countertop"
+        class="Showcase-item full-size"
+        src="stussy-home-5.webp"
+      />
+    </div>
+  </div>
+</div>
+`;
