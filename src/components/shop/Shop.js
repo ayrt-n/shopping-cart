@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import CartActionButton from './CartActionButton';
+import Checkout from './Checkout';
 import '../../styles/Shop.css';
 import uniqid from 'uniqid';
 
 function Shop() {
   const [cart, setCart] = useState([]);
   const [quantity, setQuantity] = useState(0);
+  const [menuActive, setMenuActive] = useState(false);
   const products = [
     {
       name: 'STUSSY BASIC BLACK SWEATER',
@@ -64,6 +66,10 @@ function Shop() {
     setCart(updatedCart);
   }
 
+  const toggleMenu = () => {
+    setMenuActive(menuActive ? false : true)
+  };
+
   // On cart update, calculate how many items in cart and set quantity equal
   useEffect(() => {
     setQuantity(
@@ -84,7 +90,8 @@ function Shop() {
           />
         ))}
       </ul>
-      <CartActionButton quantity={quantity} />
+      <CartActionButton quantity={quantity} handleClick={toggleMenu} />
+      <Checkout cart={cart} menuActive={menuActive} closeMenu={toggleMenu} />
     </div>
   );
 }
