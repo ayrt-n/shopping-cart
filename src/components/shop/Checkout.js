@@ -6,7 +6,7 @@ function Checkout({ cart, menuActive, closeMenu }) {
     <div className={menuActive ? "Shop-checkout" : "Shop-checkout hidden"}>
       <h1>Shopping Cart</h1>
       {cart.length === 0
-        ? <div className="Checkout-message">Cart is empty!</div>
+        ? <div className="Checkout-message" data-testid="empty-cart">Cart is empty!</div>
         : <CheckoutTable cart={cart} />
       }
       <div className="Checkout-buttons">
