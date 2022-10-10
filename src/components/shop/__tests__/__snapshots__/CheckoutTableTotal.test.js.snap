@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutTableTotal component renders table row correctly 1`] = `
+<div>
+  <table>
+    <tbody>
+      <tr>
+        <th
+          colspan="2"
+        >
+          Total
+        </th>
+        <td
+          data-testid="checkout-total"
+        >
+          $
+          0
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

@@ -4,7 +4,12 @@ import '@testing-library/jest-dom'
 import CheckoutTableTotal from '../CheckoutTableTotal';
 
 describe('CheckoutTableTotal component', () => {
-  it('Calculates the total and displays in table row', () => {
+  it('renders table row correctly', () => {
+    const { container } = render(<CheckoutTableTotal cart={[]} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('calculates the total and displays in table row', () => {
     const cart = [
       {
         quantity: 2,
