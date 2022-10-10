@@ -34,6 +34,7 @@
 
 /* Cart Action Button Styles */
 .Shop-cart-action-button {
+  border: none;
   background-color: rgb(28, 28, 28);
   box-sizing: border-box;
   padding: 1.25rem;
@@ -172,4 +173,25 @@ input[type=number] {
 
 .Shop-cart-button:active {
   border-color: #666666;
+}
+
+/* Checkout Menu */
+.Shop-checkout {
+  box-sizing: border-box;
+  background-color: #fafafa;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  padding: 2rem;
+  z-index: 30;
+  transition: transform 250ms ease;
+  transform: translateY(0);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Shop-checkout.hidden {
+  transform: translateX(1000px);
 }
