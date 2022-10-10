@@ -195,3 +195,86 @@ input[type=number] {
 .Shop-checkout.hidden {
   transform: translateX(1000px);
 }
+
+.Shop-checkout h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.Checkout-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 20px;
+}
+
+.Checkout-table th {
+  font-weight: 600;
+}
+
+.Checkout-table th:first-child {
+  text-align: left;
+}
+
+.Checkout-table th:not(:first-child) {
+  text-align: center;
+}
+
+.Checkout-table td:not(:first-child) {
+  text-align: center;
+}
+
+.Checkout-table td:first-child {
+  padding-right: 5px;
+}
+
+.Shop-checkout-button {
+  -webkit-appearance: none;
+  align-items: center;
+  border-radius: 0.375em;
+  box-shadow: none;
+  display: block;
+  font-size: 1rem;
+  height: 2.5em;
+  line-height: 1.5;
+  background-color: #fff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  background-color: #363636;
+}
+
+.Shop-checkout-button:hover {
+  background-color: #232323;
+}
+
+.Shop-checkout-button:active {
+  background-color: #464646;
+}
+
+.Shop-checkout-button.cancel {
+  color: #363636;
+  background-color: #e1e1e1;
+}
+
+.Shop-checkout-button.cancel:hover {
+  background-color: #cacaca;
+}
+
+.Shop-checkout-button.cancel:active {
+  background-color: #eeeeee;
+}
+
+.Checkout-buttons button:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.Checkout-message {
+  margin: 20px 0;
+}
