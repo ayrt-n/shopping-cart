@@ -3,7 +3,7 @@ import CheckoutTable from './CheckoutTable';
 
 function Checkout({ cart, menuActive, closeMenu }) {
   return (
-    <div className={menuActive ? "Shop-checkout" : "Shop-checkout hidden"}>
+    <div className={menuActive ? "Shop-checkout" : "Shop-checkout hidden"} data-testid="checkout">
       <h1>Shopping Cart</h1>
       {cart.length === 0
         ? <div className="Checkout-message" data-testid="empty-cart">Cart is empty!</div>
