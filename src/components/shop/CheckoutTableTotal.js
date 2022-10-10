@@ -1,7 +1,9 @@
 import React from 'react';
 
 function CheckoutTableTotal({ cart }) {
-  const total = cart.reduce((sum, item) => sum + (item.quantity * item.price), 0);
+  const total = (Math.round(
+    (cart.reduce((sum, item) => sum + (item.quantity * item.price), 0) * 100)) / 100)
+    .toFixed(2);
 
   return (
     <tr>
