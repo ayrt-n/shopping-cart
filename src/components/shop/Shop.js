@@ -7,7 +7,6 @@ import uniqid from 'uniqid';
 
 function Shop() {
   const [cart, setCart] = useState([]);
-  const [quantity, setQuantity] = useState(0);
   const [menuActive, setMenuActive] = useState(false);
   const products = [
     {
@@ -70,13 +69,6 @@ function Shop() {
     setMenuActive(menuActive ? false : true)
   };
 
-  // On cart update, calculate how many items in cart and set quantity equal
-  useEffect(() => {
-    setQuantity(
-      cart.reduce((sum, item) => (sum + item.quantity), 0)
-    );
-  }, [cart]);
-
   return (
     <div className='Shop'>
       <ul className='Shop-grid'>
@@ -90,7 +82,12 @@ function Shop() {
           />
         ))}
       </ul>
-      <CartActionButton quantity={quantity} handleClick={toggleMenu} />
+
+      <CartActionButton
+        quantity={cart.reduce((sum, item) => (sum + item.quantity), 0)}
+        handleClick={toggleMenu}
+      />
+
       <Checkout cart={cart} menuActive={menuActive} closeMenu={toggleMenu} />
     </div>
   );
