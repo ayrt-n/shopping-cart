@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutProductRow component renders product details 1`] = `
+<div>
+  <tr>
+    <td>
+      Test
+    </td>
+    <td>
+      5
+    </td>
+    <td>
+      $
+      5
+    </td>
+  </tr>
+</div>
+`;
