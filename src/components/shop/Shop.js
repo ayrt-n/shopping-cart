@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import CartActionButton from './CartActionButton';
 import Checkout from './Checkout';
@@ -66,7 +66,7 @@ function Shop() {
   }
 
   const toggleMenu = () => {
-    setMenuActive(menuActive ? false : true)
+    setMenuActive(!menuActive)
   };
 
   return (
