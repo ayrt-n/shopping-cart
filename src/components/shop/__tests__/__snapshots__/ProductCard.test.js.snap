@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard component correctly renders product card 1`] = `
+<div>
+  <li
+    class="Shop-grid-item"
+  >
+    <img
+      alt="test.jpg"
+      src="test-file-stub"
+    />
+    <h2>
+      Test
+    </h2>
+    <p
+      class="Shop-price"
+    >
+      $
+      1
+    </p>
+    <button>
+      Mock Form
+    </button>
+  </li>
+</div>
+`;

@@ -12,7 +12,7 @@ exports[`CheckoutTableTotal component renders table row correctly 1`] = `
       data-testid="checkout-total"
     >
       $
-      0
+      0.00
     </td>
   </tr>
 </div>

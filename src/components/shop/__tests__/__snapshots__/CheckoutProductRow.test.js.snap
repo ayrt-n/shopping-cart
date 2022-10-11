@@ -11,7 +11,7 @@ exports[`CheckoutProductRow component renders product details 1`] = `
     </td>
     <td>
       $
-      5
+      5.00
     </td>
   </tr>
 </div>
