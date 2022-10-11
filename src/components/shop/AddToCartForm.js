@@ -7,7 +7,7 @@ function AddToCartForm({ handleSubmit }) {
     setCount(e.target.value)
   };
 
-  const preventNumKeys = (e) => {
+  const preventNonNumKeys = (e) => {
     if (e.key === '-' || e.key === '.' || e.key === '+' || e.key === 'e') {
       e.preventDefault();
     }
@@ -45,7 +45,7 @@ function AddToCartForm({ handleSubmit }) {
         <input
           type="number"
           value={count}
-          onKeyPress={preventNumKeys}
+          onKeyPress={preventNonNumKeys}
           onChange={changeCount}
           min="0"
           name="quantity"
