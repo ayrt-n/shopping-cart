@@ -3,11 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './home/Home';
 import Shop from './shop/Shop';
 
-function RouteSwitch() {
+function RouteSwitch({ products }) {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/shop" element={<Shop />} />
+      <Route path="/shop" element={<Shop products={products} />} />
     </Routes>
   );
 }
