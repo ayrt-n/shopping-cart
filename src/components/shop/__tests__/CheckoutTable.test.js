@@ -22,8 +22,8 @@ jest.mock('../CheckoutTableTotal', () => ({ cart }) => (
 // Setup props
 const cart = [
   {id: 'test1', name: 'Test1', quantity: 1, price: 1},
-  {id: 'test1', name: 'Test2', quantity: 1, price: 1},
-  {id: 'test1', name: 'Test3', quantity: 1, price: 1},
+  {id: 'test2', name: 'Test2', quantity: 1, price: 1},
+  {id: 'test3', name: 'Test3', quantity: 1, price: 1},
 ];
 
 describe('CheckoutTable component', () => {
