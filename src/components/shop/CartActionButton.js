@@ -7,9 +7,9 @@ function CartActionButton({ quantity, handleClick }) {
   }
 
   return (
-    <button className='Shop-cart-action-button' onClick={handleClick} aria-label="Open cart">
-      <img src={cartIcon} alt='' />
-      <div className='Shop-cart-count'>
+    <button className="Shop-cart-action-button" onClick={handleClick} aria-label="Open cart">
+      <img src={cartIcon} alt="" />
+      <div className="Shop-cart-count" data-testid="cart-quantity">
         {quantity}
       </div>
     </button>
