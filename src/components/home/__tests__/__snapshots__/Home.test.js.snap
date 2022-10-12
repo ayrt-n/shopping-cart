@@ -11,12 +11,12 @@ exports[`Home component render homepage with images 1`] = `
       <img
         alt="Man wearing black stussy shirt"
         class="Showcase-item"
-        src="stussy-home-1.webp"
+        src="test-file-stub"
       />
       <img
         alt="Man wearing black stussy hoodie"
         class="Showcase-item"
-        src="stussy-home-2.webp"
+        src="test-file-stub"
       />
     </div>
     <div
@@ -25,12 +25,12 @@ exports[`Home component render homepage with images 1`] = `
       <img
         alt="Stussy denim jacket"
         class="Showcase-item"
-        src="stussy-home-3.webp"
+        src="test-file-stub"
       />
       <img
         alt="Man wearing white stussy shirt and brown pants"
         class="Showcase-item"
-        src="stussy-home-4.webp"
+        src="test-file-stub"
       />
     </div>
     <div
@@ -39,7 +39,7 @@ exports[`Home component render homepage with images 1`] = `
       <img
         alt="Miniature eight ball sitting on countertop"
         class="Showcase-item full-size"
-        src="stussy-home-5.webp"
+        src="test-file-stub"
       />
     </div>
   </div>

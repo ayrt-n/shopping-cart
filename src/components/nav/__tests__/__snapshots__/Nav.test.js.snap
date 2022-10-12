@@ -11,7 +11,7 @@ exports[`Nav component renders nav with links 1`] = `
       <img
         alt="Stussy logo"
         class="Nav-logo"
-        src="logo.svg"
+        src="test-file-stub"
       />
     </a>
     <a
