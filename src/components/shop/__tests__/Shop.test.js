@@ -17,8 +17,8 @@ jest.mock('../checkout', () => ({ cart }) => (
   </ul>
 ));
 
-jest.mock('../ProductCard', () => ({ name, handleSubmit }) => (
-  <li>
+jest.mock('../ProductCard', () => ({ name, id, handleSubmit }) => (
+  <li key={id}>
     {name}
     <button onClick={() => handleSubmit({ name: name, quantity: 1 })}>
       Add {name} to cart
@@ -30,9 +30,9 @@ describe('Shop component', () => {
   describe('product card list', () => {
     it('correctly renders out the list of products', () => {
       const products = [
-        { name: 'Hat' },
-        { name: 'Shirt' },
-        { name: 'Pants' },
+        { name: 'Hat', id: 1 },
+        { name: 'Shirt', id: 2 },
+        { name: 'Pants', id: 3 },
       ]
 
       render(<Shop products={products} />);
@@ -47,9 +47,9 @@ describe('Shop component', () => {
   describe('shopping cart', () => {
     it('has quantity zero when no items in cart', () => {
       const products = [
-        { name: 'Hat' },
-        { name: 'Shirt' },
-        { name: 'Pants' },
+        { name: 'Hat', id: 1 },
+        { name: 'Shirt', id: 2 },
+        { name: 'Pants', id: 3 },
       ]
 
       render(<Shop products={products} />);
@@ -60,9 +60,9 @@ describe('Shop component', () => {
 
     it('updates the quantity in the CartActionButton when product added to cart', () => {
       const products = [
-        { name: 'Hat' },
-        { name: 'Shirt' },
-        { name: 'Pants' },
+        { name: 'Hat', id: 1 },
+        { name: 'Shirt', id: 2 },
+        { name: 'Pants', id: 3 },
       ]
 
       render(<Shop products={products} />);
@@ -82,9 +82,9 @@ describe('Shop component', () => {
 
     it('adds product and quantity to checkout when added to cart', () => {
       const products = [
-        { name: 'Hat' },
-        { name: 'Shirt' },
-        { name: 'Pants' },
+        { name: 'Hat', id: 1 },
+        { name: 'Shirt', id: 2 },
+        { name: 'Pants', id: 3 },
       ]
 
       render(<Shop products={products} />);
