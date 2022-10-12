@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckoutProductRow component renders product details 1`] = `
-<div>
+<tbody>
   <tr>
     <td>
       Test
@@ -14,5 +14,5 @@ exports[`CheckoutProductRow component renders product details 1`] = `
       5.00
     </td>
   </tr>
-</div>
+</tbody>
 `;

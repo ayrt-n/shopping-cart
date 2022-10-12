@@ -5,7 +5,12 @@ import CheckoutTableTotal from '../CheckoutTableTotal';
 
 describe('CheckoutTableTotal component', () => {
   it('renders table row correctly', () => {
-    const { container } = render(<CheckoutTableTotal cart={[]} />);
+    const tbody = document.createElement('tbody');
+
+    const { container } = render(<CheckoutTableTotal cart={[]} />, {
+      container: document.body.appendChild(tbody)
+    });
+    
     expect(container).toMatchSnapshot();
   });
 
@@ -21,7 +26,12 @@ describe('CheckoutTableTotal component', () => {
       },
     ]
 
-    render(<CheckoutTableTotal cart={cart} />)
+    const tbody = document.createElement('tbody');
+
+    render(<CheckoutTableTotal cart={cart} />, {
+      container: document.body.appendChild(tbody)
+    });
+    
     const tableTotal = screen.getByTestId('checkout-total');
 
     expect(tableTotal).toHaveTextContent('$29');

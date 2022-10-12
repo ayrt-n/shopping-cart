@@ -11,7 +11,11 @@ describe('CheckoutProductRow component', () => {
       price: 1,
     }
 
-    const { container } = render(<CheckoutProductRow product={product} />)
+    const tbody = document.createElement('tbody');
+
+    const { container } = render(<CheckoutProductRow product={product} />, {
+      container: document.body.appendChild(tbody)
+    });
 
     expect(container).toMatchSnapshot();
   });

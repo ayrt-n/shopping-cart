@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckoutTableTotal component renders table row correctly 1`] = `
-<div>
+<tbody>
   <tr>
     <th
       colspan="2"
@@ -15,5 +15,5 @@ exports[`CheckoutTableTotal component renders table row correctly 1`] = `
       0.00
     </td>
   </tr>
-</div>
+</tbody>
 `;
