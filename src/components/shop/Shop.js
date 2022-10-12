@@ -3,43 +3,11 @@ import ProductCard from './ProductCard';
 import CartActionButton from './CartActionButton';
 import Checkout from './Checkout';
 import '../../styles/Shop.css';
-import uniqid from 'uniqid';
 
-function Shop() {
+
+function Shop({ products }) {
   const [cart, setCart] = useState([]);
   const [menuActive, setMenuActive] = useState(false);
-  const products = [
-    {
-      name: 'STUSSY BASIC BLACK SWEATER',
-      image: 'stussy-black-sweater.webp',
-      price: '220.00',
-      id: uniqid(),
-    },
-    {
-      name: 'STUSSY BASIC BLACK T-SHIRT',
-      image: 'stussy-black-shirt.webp',
-      price: '24.99',
-      id: uniqid(),
-    },
-    {
-      name: 'STUSSY BLACK LION T-SHIRT',
-      image: 'stussy-lion-shirt.webp',
-      price: '24.99',
-      id: uniqid(),
-    },
-    {
-      name: 'STUSSY BLUE SQUARED T-SHIRT',
-      image: 'stussy-blue-s-shirt.webp',
-      price: '24.99',
-      id: uniqid(),
-    },
-    {
-      name: 'STUSSY BUCKET HAT',
-      image: 'stussy-bucket-hat.webp',
-      price: '24.99',
-      id: uniqid(),
-    },
-  ];
 
   // On addToCart take product object and add to cart array or add quantity if item exists
   const addToCart = (cartObject) => {
@@ -71,10 +39,10 @@ function Shop() {
 
   return (
     <div className='Shop'>
-      <ul className='Shop-grid'>
+      <ul className='Shop-grid' aria-label='products'>
         { products.map((product) => (
           <ProductCard
-            name = {product.name}
+            name={product.name}
             image={product.image}
             price={product.price}
             handleSubmit={addToCart}
