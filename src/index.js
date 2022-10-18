@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter shopping-cart>
+    <BrowserRouter basename="/ayrt-n/shopping-cart">
       <App />
     </BrowserRouter>
   </React.StrictMode>
