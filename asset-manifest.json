@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.dc999a4a.css",
-    "main.js": "/shopping-cart/static/js/main.add5ae6f.js",
+    "main.js": "/shopping-cart/static/js/main.1209c86e.js",
     "static/media/Inter.var.woff2?v=3.19": "/shopping-cart/static/media/Inter.var.c2fe3cb2b7c746f7966a.woff2",
     "static/media/stussy-home-2.webp": "/shopping-cart/static/media/stussy-home-2.f068280d3493b2e0093d.webp",
     "static/media/stussy-home-3.webp": "/shopping-cart/static/media/stussy-home-3.36528e9844d15a8e1513.webp",
@@ -55,10 +55,10 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/cart.svg": "/shopping-cart/static/media/cart.fbc2051a03cee02703df31ca846c750e.svg",
     "main.dc999a4a.css.map": "/shopping-cart/static/css/main.dc999a4a.css.map",
-    "main.add5ae6f.js.map": "/shopping-cart/static/js/main.add5ae6f.js.map"
+    "main.1209c86e.js.map": "/shopping-cart/static/js/main.1209c86e.js.map"
   },
   "entrypoints": [
     "static/css/main.dc999a4a.css",
-    "static/js/main.add5ae6f.js"
+    "static/js/main.1209c86e.js"
   ]
 }
